@@ -1,35 +1,31 @@
-/* Import Google Font */
+
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap');
 
-/* General Reset */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Font & Base Styling */
 body {
   font-family: 'Quicksand', sans-serif;
-  background-color: #fff0f5; /* Light lavender blossom */
-  color: #4d2c2c; /* Earthy brown */
+  background-color: #fff0f5; 
+  color: #4d2c2c; 
   line-height: 1.6;
-  background-image: url('https://www.transparenttextures.com/patterns/flower.png'); /* Optional subtle floral bg */
+  background-image: url('https://www.transparenttextures.com/patterns/flower.png'); 
   background-repeat: repeat;
 }
 
-/* Header */
 header {
-  background-color: #c94c4c; /* Rose red */
+  background-color: #c94c4c; 
   color: white;
   padding: 1.5em 0;
   text-align: center;
   animation: fadeIn 1s ease-in-out;
 }
 
-/* Navigation Bar */
 .navbar {
-  background-color: #9b2226; /* Tulip red */
+  background-color: #9b2226; 
   list-style: none;
   display: flex;
   justify-content: center;
@@ -48,29 +44,27 @@ header {
   padding: 0.75em 1em;
   display: block;
   border-radius: 8px;
-  background-color: #f28482; /* Coral pink */
+  background-color: #f28482; 
   transition: transform 0.3s ease, background-color 0.3s;
 }
 
 .navbar a:hover {
-  background-color: #ffcad4; /* Blossom pink */
-  transform: scale(1.1); /* Bloom effect */
+  background-color: #ffcad4; 
+  transform: scale(1.1); 
 }
 
-/* Main Container */
 .container {
   max-width: 1000px;
   margin: auto;
   padding: 20px;
 }
 
-/* Profile Section */
 .profile {
   display: flex;
   align-items: center;
   gap: 30px;
   flex-wrap: wrap;
-  background-color: #fdf0d5; /* Creamy yellow */
+  background-color: #fdf0d5; 
   padding: 20px;
   border-radius: 12px;
   box-shadow: 0 0 15px rgba(0,0,0,0.05);
@@ -82,19 +76,18 @@ header {
   height: 200px;
   object-fit: cover;
   border-radius: 50%;
-  border: 5px solid #a3c4bc; /* Leaf green */
+  border: 5px solid #a3c4bc; 
   transition: transform 0.4s ease;
 }
 
 .profile-img:hover {
-  transform: scale(1.08); /* Gentle zoom */
+  transform: scale(1.08); 
 }
 
 .profile-text {
   flex: 1;
 }
 
-/* Footer */
 footer {
   background-color: #c94c4c;
   color: white;
@@ -104,7 +97,6 @@ footer {
   animation: fadeIn 1s ease-in-out;
 }
 
-/* Responsive Layout */
 @media (max-width: 768px) {
   .profile {
     flex-direction: column;
@@ -120,7 +112,6 @@ footer {
   }
 }
 
-/* Animations */
 @keyframes fadeIn {
   from { opacity: 0; }
   to { opacity: 1; }
@@ -136,6 +127,7 @@ footer {
     transform: translateY(0);
   }
 }
+
 input[type="text"],
 input[type="email"],
 textarea {
@@ -147,12 +139,17 @@ textarea {
   font-size: 16px;
 }
 
+
 @media (max-width: 768px) {
   .profile {
     flex-direction: column;
     text-align: center;
   }
-
+  .about-container {
+    flex-direction: column-reverse;
+    text-align: 0;
+  }
+  
   .navbar {
     flex-direction: column;
   }
@@ -171,14 +168,87 @@ textarea {
     padding: 10px 20px;
   }
 }
+
 i {
   margin-right: 8px;
-  color: #555; /* Dark gray */
+  color: #555; 
   font-size: 18px;
 }
 
 a:hover i {
-  color: #ff7f50; /* Coral hover color */
+  color: #ff7f50; 
   transform: scale(1.2);
   transition: 0.3s;
+}
+
+.resume-link {
+  display: inline-block;
+  font-size: 18px;
+  color: #d62828;
+  text-decoration: none;
+  margin-top: 10px;
+  transition: transform 0.3s ease;
+}
+
+.resume-link i {
+  font-size: 24px;
+  margin-right: 8px;
+  color: #d62828;
+}
+
+.resume-link:hover {
+  transform: scale(1.05);
+  color: #ff595e;
+}
+
+.download-btn {
+  display: inline-block;
+  margin-top: 20px;
+  background-color: #ffb703;
+  color: #023047;
+  padding: 12px 24px;
+  border-radius: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.3s;
+}
+
+.download-btn i {
+  margin-right: 10px;
+}
+
+.download-btn:hover {
+  background-color: #f77f00;
+  transform: scale(1.05);
+  color: white;
+}
+
+.center-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center; 
+  padding: 20px;
+}
+
+.custom-img {
+  width: 50%;        
+  max-width: 100px;   
+  height: auto;       
+  display: block;
+  margin: 0 auto;     
+}
+
+.custom-img {
+  width: 300px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+body {
+  margin: 0;
+  font-family: 'Quicksand', sans-serif;
+  transition: background-color 0.4s ease, color 0.4s ease;
 }
