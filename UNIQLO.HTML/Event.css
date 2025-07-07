@@ -1,0 +1,165 @@
+/* Reset */
+#Events {
+  padding-bottom: 0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Garamond', serif;
+  background-color: #f0f0f0;
+}
+
+/* Header */
+header {
+  background-color: #980303;
+  padding: 10px 20px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.logo img {
+  width: 45px;
+  height: auto;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  gap: 30px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #ffd9d9;
+}
+
+/* Welcome Section */
+#welcome {
+  text-align: center;
+  background-color: rgba(243, 214, 208, 0.2);
+  padding: 200px 40px 100px;
+  position: relative;
+  z-index: 3;
+}
+
+#welcome h1 {
+  font-size: 70px;
+  margin-bottom: 50px;
+}
+
+#welcome p {
+  font-size: 23px;
+  color: #0a0101;
+}
+
+/* Events Section */
+#Events {
+  text-align: center;
+  padding: 70px 40px;
+  background-color: #fff;
+}
+
+#Events p {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 30px;
+  font-size: 1.1rem;
+  color: #444;
+  line-height: 1.6;
+}
+
+.events-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  justify-content: center;
+  padding: 20px 0;
+}
+
+.event-card {
+  background-color: #f7f7f7;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  border-left: 5px solid #980303;
+  text-align: left;
+}
+
+.event-card h3 {
+  color: #980303;
+}
+
+.event-poster {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+
+.join-container {
+  text-align: center;
+  margin: 40px 0;
+}
+
+.join-us-btn {
+  background-color: #b40000; /* UNIQLO red */
+  color: white;
+  padding: 12px 30px;
+  font-size: 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-weight: bold;
+}
+
+.join-us-btn:hover {
+  background-color: #8d0000;
+}
+
+
+
+
+footer {
+  background: #333;
+  color: #fff;
+  text-align: center;
+  padding: 15px 670px;
+  font-size: 0.9rem;
+  width: 100%;
+  line-height: 1.6;
+}
+
+
+
+
+/* Bullet Styling */
+.bullet::before {
+  content: "• ";
+  color: #ff6600;
+  font-weight: bold;
+  margin-right: 8px;
+}
+
+p {
+  text-align: justify;
+}

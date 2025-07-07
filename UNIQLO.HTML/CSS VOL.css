@@ -1,0 +1,768 @@
+/* General Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f9f8f8;
+  color: #ffffff;
+  line-height: 1.6;
+  padding: 0 20px;
+}
+
+/* Header */
+header {
+  background: #0c0c0c;
+  padding: 1rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #f7f4f4;
+}
+
+.logo img {
+  width: 120px;
+  height: auto;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  color: #0d0d0d;
+}
+
+.video-banner {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.video-banner video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  transform: translate(-50%, -50%);
+  object-fit: fill;
+  z-index: 1;
+}
+
+.video-banner .overlay {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  color: #fff;
+  top: 40%;
+  transform: translateY(-40%);
+  padding: 0 20px;
+}
+
+.video-banner .overlay h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  text-shadow: 2px 2px 10px rgba(0,0,0,0.7);
+}
+
+.video-banner .overlay p {
+  font-size: 1.25rem;
+  text-shadow: 1px 1px 8px rgba(0,0,0,0.6);
+}
+
+
+/* Volunteer Intro Section */
+#volunteer-intro {
+  text-align: center;
+  padding: 2rem 0;
+}
+
+#volunteer-intro h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+#volunteer-intro p {
+  max-width: 700px;
+  margin: 0 auto;
+  font-size: 1rem;
+  color: #555;
+}
+
+#testimonials {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.testimonials-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.testimonial-card img {
+    width: 3000px; /* Adjust the width to your preference */
+    height: 2000px; /* Maintain a rectangular, horizontal shape */
+    object-fit: cover; /* Ensures the image scales correctly while maintaining aspect ratio */
+    border-radius: 10px; /* Optional: for rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: to add shadow for a more polished look */
+}
+
+#testimonials {
+  padding: 2rem;
+  background-color: #f8f6f3;
+  text-align: center;
+}
+
+#testimonials h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #d43c3c;
+  text-transform: lowercase;
+}
+
+#testimonials h2 span {
+  font-weight: bold;
+  font-size: 2.2rem;
+  color: #ff4d4d;
+  font-family: 'Comic Sans MS', cursive;
+}
+
+.testimonials-row {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  gap: 2rem;
+  overflow-x: auto;
+}
+
+.testimonial-card {
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 1.5rem;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+  max-width: 350px;
+  min-width: 300px;
+  flex: 0 0 auto;
+  text-align: left;
+}
+
+.testimonial-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+  margin-bottom: 1rem;
+}
+
+.testimonial-text .name {
+  font-weight: bold;
+  margin-bottom: 0.3rem;
+}
+
+footer {
+  background: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 3rem;
+  font-size: 0.9rem;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+
+header {
+    background-color: transparent;
+    padding: 20px 20px;
+    position: relative;
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    width: 45px;
+    height: auto;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+
+section {
+    padding: 40px 20px;
+    margin: 0 15px;
+}
+
+section h1, section h2 {
+    color: #d41515;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+section p, section ul, section ol {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+
+#testimonials {
+    background-color: #f8f8f8;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+#testimonials h2 {
+    font-size: 32px;
+    color: #ed1515; 
+    margin-bottom: 20px;
+}
+
+
+.testimonials-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+
+.testimonial-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 250px;
+    text-align: center;
+}
+
+.testimonial-card img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.testimonial-card blockquote {
+    font-style: italic;
+    font-size: 18px;
+    color: #555;
+}
+
+.testimonial-card p {
+    font-size: 16px;
+    color: #333;
+}
+
+/* Sign Up Section */
+#sign-up {
+  background-color: #dd8585;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.sign-up-container {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+#sign-up h3 {
+  font-size: 2rem;
+  color: #980303;
+  margin-bottom: 20px;
+}
+
+#sign-up p {
+  font-size: 1.1rem;
+  color: #fcfafa;
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+.sign-up-btn, .submit-btn {
+  background-color: #e60012;
+  color: #fff;
+  padding: 14px 28px;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  border: none;
+  cursor: pointer;
+}
+
+.sign-up-btn:hover, .submit-btn:hover {
+  background-color: #b0000d;
+  transform: scale(1.05);
+}
+
+#volunteer-form input, 
+#volunteer-form textarea {
+  width: 100%;
+  max-width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 40px;
+}
+#volunteer-form {
+  background-color: #fff;
+  padding: 2rem;
+  margin-top: 3rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#volunteer-form h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+#volunteer-form p {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #666;
+}
+
+#volunteer-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+#volunteer-form label {
+  font-weight: bold;
+  margin-bottom: 0.25rem;
+}
+
+#volunteer-form input,
+#volunteer-form select,
+#volunteer-form textarea {
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  width: 100%;
+}
+
+#volunteer-form button {
+  background-color: #5f5fef;
+  color: white;
+  border: none;
+  padding: 0.75rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+#volunteer-form button:hover {
+  background-color: #4747d1;
+}
+.events-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px 0;
+}
+
+.event-card {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-left: 5px solid #980303;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.event-card h3 {
+    margin-top: 0;
+    color: #980303;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Garamond', serif;
+    background-color: #f0f0f0;
+}
+
+
+
+.background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+header {
+    background-color: #ff0000;
+
+    padding: 10px 20px;
+    position: relative;
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.logo img {
+    width: 45px;
+    height: auto;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+#welcome {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 200px 40px;
+    position: relative;
+    z-index: 3;
+}
+
+#welcome h1 {
+    font-size: 70px;
+    color: white;
+    font-family: 'Garamond', serif; /* Use Garamond font */
+    margin-bottom: 50px;
+}
+
+#welcome p {
+    font-size: 23px;
+    color: #ffffff;
+}
+
+footer {
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    position: relative;
+    z-index: 3;
+}
+
+#about {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #fff;
+    position: relative;
+    z-index: 3;
+}
+
+#about h2 {
+    font-size: 60px;
+    font-family: 'Garamond', serif;
+    margin-bottom: 35px;
+}
+
+#about p {
+    font-size: 18px;
+    color: #0a0000;
+    margin-bottom: 50px;
+    line-height: 1.6;
+}
+
+.team-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.team-member {
+    text-align: center;
+}
+
+.team-member img {
+    width: 250px;
+    height: 280px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.team-member p {
+    font-size: 18px;
+    color: #333;
+}
+
+#contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Ensures it's centered vertically */
+    background-color: #f9f9f9;
+    }
+
+.contact-form {
+    width: 100%;
+    max-width: 600px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    }
+
+.contact-form textarea {
+    height: 150px;
+    }
+
+.contact-form button {
+    padding: 10px 20px;
+    background-color: #FF4F00;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    }
+
+.contact-form button:hover {
+    background-color: #E14300;
+    }
+
+
+
+/* Optional: Add more spacing for #welcome section if needed */
+#welcome {
+    text-align: center;
+    background-color: rgba(243, 214, 208, 0.2); /* Semi-transparent overlay */
+    padding: 200px 40px 100px; /* Add bottom padding for space */
+    position: relative;
+    z-index: 3;
+}
+
+
+/* Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    overflow: auto;
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 15% auto;
+    padding: 20px;
+    width: 80%;
+    max-width: 800px;
+    border-radius: 10px;
+}
+
+.close {
+    color: #aaa;
+    font-size: 28px;
+    font-weight: bold;
+    position: absolute;
+    top: 0;
+    right: 20px;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+section {
+    text-align: center;
+    margin: 0 auto;
+}
+
+
+
+/* General styles for the page */
+body {
+    font-family: Garamond, serif;
+    margin: 0px;
+    padding: 0px;
+    background-color: #f2f3f7;
+}
+
+
+
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Garamond', serif;
+}
+
+/* Header */
+header {
+    background-color: transparent;
+    padding: 20px 20px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Logo */
+.logo img {
+    width: 45px;
+    height: auto;
+}
+
+header {
+    background-color: #980303;
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.logo img {
+    width: 45px;
+    height: auto;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ffd9d9;
+}
+
+.video-banner.no-video {
+    background-color: #f0f0f0; /* Gantikan video dengan warna lembut */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 60vh; /* atau apa-apa tinggi sesuai */
+    padding: 40px;
+}
+
+.video-banner .overlay {
+    max-width: 800px;
+    padding: 20px;
+}
+
+.video-banner h1 {
+    font-size: 2.5em;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.video-banner p {
+    font-size: 1.2em;
+    color: #666;
+}

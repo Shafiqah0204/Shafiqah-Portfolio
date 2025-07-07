@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>From Street to Shelter</title>
+    <style>
+        /* Reset some default styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Garamond', serif;
+            background-color: #f0f0f0;
+        }
+
+        /* Full-page background video */
+        .background-video {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Ensure the video covers the whole screen */
+            z-index: -1; /* Ensures the video stays behind the content */
+        }
+     header {
+    background-color: red;
+    padding: 10px 20px;
+    position: relative;
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+        /* Logo styling */
+        .logo {
+            font-size: 22px; /* Smaller logo */
+            color: white;
+            font-weight: bold;
+            padding: 5px;
+        }
+
+        /* Navigation styles */
+        nav ul {
+            list-style-type: none;
+            display: flex;
+            justify-content: flex-end; /* Align nav items to the right */
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        #welcome {
+            text-align: center;
+            background-color: rgba(243, 214, 208, 0.2); /* Semi-transparent overlay */
+            padding: 200px 40px;
+            position: relative;
+            z-index: 3; /* Ensure content is above the video */
+        }
+
+        #welcome h1 {
+            font-size: 48px;
+            font-family: 'Georgia', serif;
+            margin-bottom: 20px;
+        }
+
+        #welcome p {
+            font-size: 20px;
+            color: #555;
+        }
+
+        footer {
+            text-align: center;
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            position: relative;
+            z-index: 3;
+        }
+
+        #about {
+            text-align: center;
+            padding: 50px 20px;
+            background-color: #fff;
+            position: relative;
+            z-index: 3;
+        }
+
+        #about h2 {
+            font-size: 36px;
+            font-family: 'Georgia', serif;
+            margin-bottom: 20px;
+        }
+
+        #about p {
+            font-size: 18px;
+            color: #555;
+            margin-bottom: 20px;
+        }
+
+        /* Simple grid layout for team members */
+        .team-container {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        .team-member {
+            text-align: center;
+        }
+
+        .team-member img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 10px;
+        }
+
+        .team-member p {
+            font-size: 18px;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Background video -->
+    <video class="background-video" autoplay muted loop>
+        <source src="PROMO.MOV" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <!-- Header with transparent background and navigation -->
+    <header>
+        <!-- Logo aligned to the left -->
+        <div class="logo">Logo</div>
+        
+        <!-- Navigation menu aligned to the right -->
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#campaign">Campaign</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="welcome">
+        <h1>From Street to Shelter</h1>
+        <p>To provide warm, functional clothing to the homeless and underprivileged communities, promoting dignity, comfort, and hope through Uniqlo's LifeWear.</p>
+    </section>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p>We are a team committed to making a positive impact on the lives of the homeless and underserved communities. Our mission is to provide them with functional and warm clothing through our partnership with Uniqlo's LifeWear. By offering dignity, comfort, and hope, we aim to uplift those in need.</p>
+        
+        <div class="team-container">
+            <!-- Team Member 1 -->
+            <div class="team-member">
+                <img src="Farah.jpg" alt="Farah">
+                <p>NUR FARAH ADIBAH BINTI MUHAIMIN</p>
+            </div>
+            <!-- Team Member 2 -->
+            <div class="team-member">
+                <img src="piqa.jpg" alt="Piqa">
+                <p>NURUL SHAFIQAH BINTI ARIFFIN</p>
+            </div>
+            <!-- Team Member 3 -->
+            <div class="team-member">
+                <img src="mila.jpg" alt="Mila">
+                <p>NURAZLEIN KARMILA BINTI LAZURUS</p>
+            </div>
+            <!-- Team Member 4 -->
+            <div class="team-member">
+                <img src="bella.jpg" alt="Bella">
+                <p>FATIN NABILAH BINTI BAHARUDDIN</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 From Street to Shelter. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

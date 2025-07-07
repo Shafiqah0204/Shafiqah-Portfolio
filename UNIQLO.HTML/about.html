@@ -1,0 +1,164 @@
+ <body>
+  <header>
+    <div class="logo">
+      <img src="LOGO.jpg" alt="Logo">
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="Campaignn.html">Campaign</a></li>
+        <li><a href="Volunteer.html">Volunteer</a></li>
+        <li><a href="Event.html">Events</a></li>
+        <li><a href="Contact.html">Contact</a></li>
+        <li><a href="donate.html">Donate</a></li> 
+      </ul>
+    </nav>
+  </header>
+ 
+ 
+ 
+ 
+ <section id="about">
+        <h2>About Us</h2>
+        <p>We are a team committed to making a positive impact on the lives of the homeless and underserved communities. 
+            
+            By offering dignity, comfort and hope, we aim to uplift those in need.</p>
+
+        
+        <div class="team-container">
+            <div class="team-member">
+                <img src="f.jpg" alt="Farah">
+                <p>Farah</p>
+            </div>
+            <div class="team-member">
+                <img src="p.JPG" alt="Piqa">
+                <p>Piqa</p>
+            </div>
+            <div class="team-member">
+                <img src="m.jpg" alt="Mila">
+                <p>Mila</p>
+            </div>
+            <div class="team-member">
+                <img src="b.jpg" alt="Bella">
+                <p>Bella</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; IMS456. All rights reserved.</p>
+    </footer>
+
+
+<style>
+
+/* Reset and base setup */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Garamond', serif;
+    background-color: #fefefe;
+    scroll-behavior: smooth;
+}
+
+/* ========== HEADER ========== */
+header {
+    background-color: #980303;
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.logo img {
+    width: 45px;
+    height: auto;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ffd9d9;
+}
+
+    #about {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #fff;
+    position: relative;
+    z-index: 3;
+}
+
+#about h2 {
+    font-size: 60px;
+    font-family: 'Garamond', serif;
+    margin-bottom: 35px;
+}
+
+#about p {
+    font-size: 18px;
+    color: #0a0000;
+    margin-bottom: 50px;
+    line-height: 1.6;
+}
+
+.team-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.team-member {
+    text-align: center;
+}
+
+.team-member img {
+    width: 250px;
+    height: 280px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.team-member p {
+    font-size: 18px;
+    color: #333;
+}
+
+footer {
+  background: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1rem 0;
+  margin-top: 3rem;
+  font-size: 0.9rem;
+}
+
+</style>

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Volunteer with Us - From Street to Shelter</title>
+    <link rel="stylesheet" href="CSS VOL.css"> 
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="LOGO.jpg" alt="Logo">
+        </div>
+        <nav>
+            <ul>
+        <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="Campaignn.html">Campaign</a></li>
+                <li><a href="Volunteer.html">Volunteer</a></li>
+                <li><a href="Event.html">Events</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+                <li><a href="donate.html">Donate</a></li>  
+            </ul>
+        </nav>
+    </header>
+
+    
+    <section id="volunteer-intro">
+        <h1>Why Volunteers Are Crucial</h1>
+        <p>Our volunteers help provide vital support to those in need. Whether you're helping with clothing drives, sorting donations, or delivering goods, your time and effort can make a real difference.</p>
+    </section>
+
+  <section id="testimonials">
+  <h2>Our Volunteers <span>Feedback</span></h2>
+  <div class="testimonials-row">
+
+    <div class="testimonial-card" data-aos="fade-up">
+      <img src="SARAH.jpg" alt="Sarah">
+      <div class="testimonial-text">
+        <p class="name">– Sarah , Volunteer</p>
+        <p class="stars">★★★★★</p>
+        <blockquote>
+          "Volunteering has given me a sense of purpose. Every time I see someone smile after receiving help, it reminds me that small actions can make a big difference."
+        </blockquote>
+      </div>
+    </div>
+
+    <div class="testimonial-card" data-aos="fade-up" data-aos-delay="100">
+      <img src="MARKS.jpg" alt="Mark">
+      <div class="testimonial-text">
+        <p class="name">– Mark , Volunteer</p>
+        <p class="stars">★★★★★</p>
+        <blockquote>
+          "Being part of this team has been one of the most rewarding experiences of my life. The gratitude from those we help keeps me motivated and reminds me of the importance of kindness."
+        </blockquote>
+      </div>
+    </div>
+
+    <div class="testimonial-card" data-aos="fade-up" data-aos-delay="200">
+      <img src="EMMA.jpg" alt="Emma">
+      <div class="testimonial-text">
+        <p class="name">– Emma , Volunteer</p>
+        <p class="stars">★★★★★</p>
+        <blockquote>
+          "Volunteering isn't just about giving time; it's about making a connection. The smiles of those we help stay with me, and I feel like I'm truly making a difference."
+        </blockquote>
+      </div>
+    </div>
+
+    <div class="testimonial-card" data-aos="fade-up" data-aos-delay="300">
+      <img src="JAMES.jpg" alt="James">
+      <div class="testimonial-text">
+        <p class="name">– James , Volunteer</p>
+        <p class="stars">★★★★★</p>
+        <blockquote>
+          "I used to wonder if my actions were enough. Now, every day I volunteer, I see the impact it has on people’s lives. It’s the most fulfilling work I’ve ever done."
+        </blockquote>
+      </div>
+    </div>
+
+    <div class="testimonial-card" data-aos="fade-up" data-aos-delay="400">
+      <img src="OLIVIA.jpg" alt="Olivia">
+      <div class="testimonial-text">
+        <p class="name">– Olivia , Volunteer</p>
+        <p class="stars">★★★★★</p>
+        <blockquote>
+          "It’s more than just handing out clothes. It’s about restoring dignity and giving hope. Volunteering has opened my eyes to the power of small acts of kindness."
+        </blockquote>
+      </div>
+    </div>
+
+  </div>
+</section>
+<section class="video-banner no-video">
+  <div class="overlay">
+    <h1>Join Us in Changing Lives</h1>
+    <p>Be part of a compassionate movement that turns kindness into action.</p>
+  </div>
+</section>
+
+<section id="sign-up">
+  <div class="sign-up-container">
+    <h3>Ready to Make a Difference?</h3>
+    <p>Join our team of dedicated volunteers. Your time and efforts can truly change lives. Sign up today!</p>
+    <button class="sign-up-btn" onclick="toggleForm()">Sign Up to Volunteer</button>
+
+    <!-- Borang akan muncul di bawah butang -->
+    <form id="volunteer-form" style="display: none; margin-top: 30px;">
+      <input type="text" placeholder="Full Name" required><br><br>
+      <input type="email" placeholder="Email Address" required><br><br>
+      <input type="tel" placeholder="Phone Number" required><br><br>
+      <textarea placeholder="Why do you want to volunteer?" rows="4" required></textarea><br><br>
+      <button type="submit" class="submit-btn">Submit</button>
+    </form>
+  </div>
+</section>
+
+
+    <section id="volunteer-form">
+  <h2>Become a Volunteer</h2>
+  <p>Fill out the form below to join us in making a difference.</p>
+
+  <form action="https://formsubmit.co/nurfarahadibah123@gmail.com" method="POST">
+    <label for="name">Full Name:</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="email">Email Address:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="phone">Phone Number:</label>
+    <input type="tel" id="phone" name="phone">
+
+    <label for="role">Preferred Volunteer Role:</label>
+    <select id="role" name="role">
+      <option value="event">Event Helper</option>
+      <option value="distribution">Goods Distribution</option>
+      <option value="fundraising">Fundraising</option>
+      <option value="admin">Admin Support</option>
+    </select>
+
+    <label for="availability">Availability (days/time):</label>
+    <input type="text" id="availability" name="availability">
+
+    <label for="message">Why do you want to volunteer?</label>
+    <textarea id="message" name="message" rows="4"></textarea>
+
+    <button type="submit">Submit Application</button>
+  </form>
+</section>
+
+    <footer>
+        <p>&copy; IMS456. All rights reserved.</p>
+    </footer>
+
+  <script>
+  function toggleForm() {
+    const form = document.getElementById("volunteer-form");
+    if (form.style.display === "none") {
+      form.style.display = "block";
+    } else {
+      form.style.display = "none";
+    }
+  }
+</script>
+
+
+</body>
+</html>
+

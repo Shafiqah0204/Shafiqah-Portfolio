@@ -1,0 +1,332 @@
+ <body>
+  <header>
+    <div class="logo">
+      <img src="LOGO.jpg" alt="Logo">
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="Campaignn.html">Campaign</a></li>
+        <li><a href="Volunteer.html">Volunteer</a></li>
+        <li><a href="Event.html">Events</a></li>
+        <li><a href="Contact.html">Contact</a></li>
+        <li><a href="donate.html">Donate</a></li> 
+      </ul>
+    </nav>
+  </header>
+
+<!-- DONATE SECTION -->
+<section id="donate" style="padding: 60px 20px; background-color: #f9f9f9;">
+  <div class="donate-box">
+    <h2 class="donate-title">Support Our Cause</h2>
+    <p class="donate-text">Your contribution helps us provide clothing, warmth, and dignity to homeless communities. Choose your way to donate:</p>
+
+    <!-- DONATE MONEY: FPX-style BANK GRID -->
+    <div class="option">
+      <h3>💳 Donate via Online Banking</h3>
+      <p>Select your bank below:</p>
+
+      <div class="bank-grid">
+        <div class="bank-card" onclick="openBank('https://www.maybank2u.com.my/')">
+          <img src="Mb2u.jpg" alt="Maybank">
+          <p>Maybank</p>
+        </div>
+        <div class="bank-card" onclick="openBank('https://www.cimbclicks.com.my/')">
+          <img src="cimb2.png" alt="CIMB">
+          <p>CIMB</p>
+        </div>
+        <div class="bank-card" onclick="openBank('https://www.pbebank.com/')">
+          <img src="pb.png" alt="Public Bank">
+          <p>Public Bank</p>
+        </div>
+        <div class="bank-card" onclick="openBank('https://www.bankislam.biz/')">
+          <img src="bi.png" alt="Bank Islam">
+          <p>Bank Islam</p>
+        </div>
+        <!-- Tambah lagi bank jika mahu -->
+      </div>
+    </div>
+
+    <!-- DONATE CLOTHES -->
+    <div class="option" style="margin-top: 40px;">
+      <h3>👕 Donate Clothes</h3>
+      <p>We welcome clean and wearable clothing. Drop them off at our collection centers.</p>
+      <a href="https://www.google.com/maps/dir//Lot+PT237+HSD+88899,+Kawasan+Bandar+XLIV,+75200+Melaka/@2.2020308,102.1418158,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x31d1f1c61c383cfb:0xa0cd8dc2e28b6b9a!2m2!1d102.2242178!2d2.2020331?entry=ttu&g_ep=EgoyMDI1MDYzMC4wIKXMDSoASAFQAw%3D%3D" target="_blank" class="donate-btn">📍 Find Drop-off Location</a>
+    </div>
+
+    <!-- DONATION FORM -->
+    <form class="donate-form">
+      <h3 style="margin-top: 40px;">Donation Form (Optional)</h3>
+      <label for="name">Full Name</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email Address</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="type">Type of Donation</label>
+      <select id="type" name="type">
+        <option value="money">Money</option>
+        <option value="clothes">Clothes</option>
+      </select>
+
+      <button type="submit" class="donate-btn">Submit</button>
+    </form>
+  </div>
+</section>
+
+<!-- THANK YOU POPUP -->
+<div id="thankyou-modal" class="modal">
+  <div class="modal-content">
+    <h2>Thank You!</h2>
+    <p>Your donation form has been submitted. We truly appreciate your support.</p>
+    <button onclick="closeModal()">OK</button>
+  </div>
+</div>
+
+
+<style>
+
+/* Reset and base setup */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Garamond', serif;
+    background-color: #fefefe;
+    scroll-behavior: smooth;
+}
+
+/* ========== HEADER ========== */
+header {
+    background-color: #980303;
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.logo img {
+    width: 45px;
+    height: auto;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ffd9d9;
+}
+
+    #about {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #fff;
+    position: relative;
+    z-index: 3;
+}
+  .donate-box {
+    max-width: 1000px;
+    margin: 0 auto;
+    background: white;
+    padding: 50px 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+
+  .donate-title {
+    font-size: 2.5rem;
+    color: #e60012;
+    margin-bottom: 10px;
+  }
+
+  .donate-text {
+    font-size: 1.2rem;
+    color: #444;
+    margin-bottom: 30px;
+  }
+
+  .donate-btn {
+    display: inline-block;
+    margin-top: 15px;
+    background: #e60012;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+
+  .donate-btn:hover {
+    background: #b0000d;
+  }
+
+  .donate-form {
+    margin-top: 40px;
+    text-align: left;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .donate-form label {
+    display: block;
+    margin: 15px 0 5px;
+    font-weight: bold;
+  }
+
+  .donate-form input,
+  .donate-form select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+  .option {
+    background: #fafafa;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    margin-bottom: 20px;
+  }
+
+  .bank-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+  .bank-card {
+    width: 130px;
+    padding: 15px;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    cursor: pointer;
+    text-align: center;
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+
+  .bank-card img {
+    width: 80px;
+    height: auto;
+    margin-bottom: 10px;
+  }
+
+  .bank-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  }
+
+  .bank-card p {
+    font-size: 0.9rem;
+    margin: 0;
+    color: #333;
+  }
+
+  /* MODAL */
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.5);
+  }
+
+  .modal-content {
+    background-color: #fff;
+    margin: 15% auto;
+    padding: 30px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  }
+
+  .modal-content h2 {
+    color: #e60012;
+    margin-bottom: 10px;
+  }
+
+  .modal-content button {
+    background-color: #e60012;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .modal-content button:hover {
+    background-color: #b0000d;
+  }
+
+  @media (max-width: 768px) {
+    .bank-grid {
+      flex-direction: column;
+    }
+
+    .bank-card {
+      width: 100%;
+    }
+  }
+</style>
+
+<!-- SCRIPT -->
+<script>
+  function openBank(url) {
+    window.open(url, "_blank");
+  }
+
+  const form = document.querySelector('.donate-form');
+  const modal = document.getElementById('thankyou-modal');
+
+  form.addEventListener('submit', function(e) {
+    e.preventDefault();
+    modal.style.display = 'block';
+    setTimeout(() => {
+      modal.style.display = 'none';
+      form.reset();
+    }, 3000);
+  });
+
+  function closeModal() {
+    modal.style.display = 'none';
+  }
+</script>
+
+
